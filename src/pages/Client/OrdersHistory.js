@@ -23,7 +23,7 @@ export function OrdersHistory() {
   
       getOrdersByTable(idTableTemp, "", "ordering=-status,-created_at");
     })();
-  }, [tableNumber, getTableByNumber, getOrdersByTable]);
+  }, []);
   
   useEffect(() => {
     (async () => {

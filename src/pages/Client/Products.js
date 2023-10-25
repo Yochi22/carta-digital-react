@@ -9,8 +9,7 @@ export function Products() {
 
   useEffect(() => {
     getProductsByCategory(idCategory);
-  }, [idCategory, getProductsByCategory]);
-  
+  }, [idCategory]);
   return (
     <div>
       <Link to={`/client/${tableNumber}`}>Volver a categorias</Link>

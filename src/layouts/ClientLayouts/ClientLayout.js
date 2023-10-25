@@ -18,15 +18,15 @@ export function ClientLayout(props) {
   }, [tableNumber]);
 
   const closeTable = () => {
-    navigate.push("/");
+    navigate("/");
   };
 
   const goToCart = () => {
-    navigate.push(`/client/${tableNumber}/cart`);
+    navigate(`/client/${tableNumber}/cart`);
   };
 
   const goToOrders = () => {
-    navigate.push(`/client/${tableNumber}/orders`);
+    navigate(`/client/${tableNumber}/orders`);
   };
 
   return (
