@@ -1,0 +1,40 @@
+// PaymentHistory.scss
+
+.payments-history-container {
+  // ... (resto de los estilos)
+
+  .ui.table {
+    width: 100%;
+    margin-bottom: 20px;
+    overflow-x: auto; // Agrega desplazamiento horizontal para tablas en dispositivos móviles
+
+    th,
+    td {
+      min-width: 100px; // Establece un ancho mínimo para las celdas
+      text-align: left; // Alinea el texto a la izquierda
+      padding: 8px; // Agrega un relleno para mejorar la legibilidad
+    }
+  }
+
+  @media only screen and (max-width: 767px) {
+    // Estilos específicos para dispositivos móviles
+    .ui.table {
+      display: block; // Cambia el diseño de la tabla a bloque para dispositivos móviles
+
+      th,
+      td {
+        display: block; // Muestra las celdas como bloques
+        width: 100%; // Ocupa el ancho completo del contenedor
+        box-sizing: border-box; // Incluye el relleno y el borde en el ancho total
+      }
+
+      tbody {
+        display: block; // Muestra el cuerpo de la tabla como bloque
+      }
+
+      tr {
+        margin-bottom: 10px; // Agrega un margen inferior entre filas para mejorar la legibilidad
+      }
+    }
+  }
+}

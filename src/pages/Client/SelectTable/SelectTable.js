@@ -24,12 +24,12 @@ export function SelectTable(props) {
   return (
     <div className="select-table">
       <div className="select-table__content">
-        <h1>Bienvenido a iCard</h1>
-        <h2>Introduce tu numero de mesa</h2>
+        <h1>Bienvenido a la carta digital</h1>
+        <h2>Introduce tu número de mesa</h2>
 
         <Form onSubmit={onSubmit}>
           <Form.Input
-            placeholder="Ejemplo: 135, 873, 904, 337"
+            placeholder="Ejemplo: 1, 2, 3"
             type="number"
             onChange={(_, data) => setTableNum(data.value)}
           />

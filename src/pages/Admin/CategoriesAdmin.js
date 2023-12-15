@@ -21,7 +21,7 @@ export function CategoriesAdmin() {
   const onRefetch = () => setRefetch((prev) => !prev);
 
   const addCategory = () => {
-    setTitleModal("Nueva categoria");
+    setTitleModal("Nueva categoría");
     setContentModal(
       <AddEditCategoryForm onClose={openCloseModal} onRefetch={onRefetch} />
     );
@@ -29,7 +29,7 @@ export function CategoriesAdmin() {
   };
 
   const updateCategory = (data) => {
-    setTitleModal("Actualizar categoria");
+    setTitleModal("Actualizar categoría");
     setContentModal(
       <AddEditCategoryForm
         onClose={openCloseModal}
@@ -51,8 +51,8 @@ export function CategoriesAdmin() {
   return (
     <>
       <HeaderPage
-        title="Categorias"
-        btnTitle="Nueva categoria"
+        title="Categorías"
+        btnTitle="Nueva categoría"
         btnClick={addCategory}
       />
       {loading ? (

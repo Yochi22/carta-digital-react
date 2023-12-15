@@ -11,7 +11,7 @@ export function TableCategoryAdmin(props) {
       <Table.Header>
         <Table.Row>
           <Table.HeaderCell>Imagen</Table.HeaderCell>
-          <Table.HeaderCell>Categoria</Table.HeaderCell>
+          <Table.HeaderCell>Categoría</Table.HeaderCell>
           <Table.HeaderCell></Table.HeaderCell>
         </Table.Row>
       </Table.Header>
